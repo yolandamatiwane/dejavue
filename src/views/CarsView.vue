@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h2>Car Data:</h2>
         <card-comp>
             <template #cars>
                 <table>
@@ -68,5 +69,21 @@ export default {
 }
 </script>
 <style>
-    
+    table{
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+
+    }
+    th{
+        border-bottom: rgb(208, 11, 110) 2px solid;
+    }
+    tr{
+        height: 40px;
+    }
+    tr:nth-child(even) {
+        color: white;
+        background-color: rgb(208, 11, 110);
+        
+    }
 </style>

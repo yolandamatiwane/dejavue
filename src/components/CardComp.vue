@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h2>List</h2>
         <slot name="cars">
             
         </slot>

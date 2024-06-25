@@ -2,19 +2,19 @@
     <div>
         <card-comp>
             <template #default>
-                <div v-for="console in pageConsolesData()" :key="console.name">
-                <label>Name: </label>{{ console.name }}
-                <br>
-                <label>Manufacturer:</label>{{ console.manufacturer }}
-                <br>
-                <label>Release Year: </label>{{ console.release_year }}
-                <br>
-                <label>storage: </label>{{ console.storage }}
-                <br>
-                <label>Price: </label>{{ console.price }}
-                <br>
-                <label>Best Selling Game: </label>{{ console.best_selling_game }}
-            </div>
+                <div id="sec" v-for="console in pageConsolesData()" :key="console.name">
+                    <label>Name: </label>{{ console.name }}
+                    <br>
+                    <label>Manufacturer:</label>{{ console.manufacturer }}
+                    <br>
+                    <label>Release Year: </label>{{ console.release_year }}
+                    <br>
+                    <label>storage: </label>{{ console.storage }}
+                    <br>
+                    <label>Price: </label>{{ console.price }}
+                    <br>
+                    <label>Best Selling Game: </label>{{ console.best_selling_game }}
+                </div>
             </template>
         </card-comp>
     </div>
@@ -42,6 +42,12 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
+    #sec{
+        margin-left: 550px;
+        margin-bottom: 10px;
+        width: 400px;
+        border-bottom: 2px solid black;
+    }
     
 </style>
